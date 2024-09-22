@@ -76,13 +76,39 @@
             <header>
                 <h1>Message Us</h1>
             </header>
-           
             <section>
                 <!-- Form -->
-                <form></form>
+                <form>
+                    <h1>Contact</h1>
+                    <form id="contactForm">
+                        <table>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Pesan</th>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" name="name" required></td>
+                                <td><input type="date" name="dob" required></td>
+
+                            <td>
+                                <select name="gender" required>
+                                    <option value=""Pilih...></option>
+                                    <option value="male">Laki-laki</option>
+                                    <option value="female">Perempuan</option>
+                                </select>
+                            </td>
+                            <td><textarea name="Message" rows="3" required></textarea></td>
+                            </tr>
+                        </table>
+                        <button type="submit">Kirim</button>
+                    </form>
+                </form>
 
                 <!-- Result Form-->
-                <div></div>
+                <div id="Result"></div>
             </section>
         </section>
     </main>
